@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+theme Name: J10 Theme template
+Author: J10NET
+Description: J10 Theme
+version： 1.0.0
+*/
+
+#wpadminbar{ top:auto !important; bottom:0 !important;}
+.mwform-radio-field input[type="radio"]{ opacity: 0;}
+.contents-news .content ul li{ list-style-type: none;}
+
+@media screen and (max-width: 767px) {
+
+html #wpadminbar{ display: none !important;}
+
+}

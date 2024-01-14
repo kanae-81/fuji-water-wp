@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* -----------------------------------------------------------------
+editor-style CSS
+LAST UPDATE:
+--------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+
+body{ color: #010034; font-family: "Noto Sans JP", sans-serif; font-size: 62.5%; /*10px*/ line-height: 1.4; word-wrap: break-word; -webkit-text-size-adjust: 100%; }
+
+iframe, p, ol, ul, table, dl { margin: 20px 0 0 0; line-height: 1.8; font-size: 16px;}
+em { -webkit-transform: skewX(-15deg); -moz-transform: skewX(-15deg); -o-transform: skewX(-15deg); transform: skewX(-15deg); -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.26794919243112214, M21=0, M22=1, SizingMethod='auto expand')"; display: block; }
+hr { margin: 20px 0; }
+blockquote p { padding: 10px 15px; background: #f6f6f6; margin-top: 20px; }
+strong span { font-weight: bold; }
+ul { margin-left: 1.5em; }
+ul{ margin-left: 0; }
+ul li { list-style: none; margin-bottom: 0; }
+ul li { list-style: disc; list-style-position: outside; font-size: 16px; margin-bottom: 5px; }
+ul li:last-child { margin-bottom: 0; }
+ul li::marker { color: #0054a2; font-size: 20px; }
+ol { margin-left: 1.5em; }
+ol li { list-style: decimal; list-style-position: outside; font-size: 16px; margin-bottom: 5px; }
+ol li:last-child { margin-bottom: 0; }
+ol li::marker { color: #0054a2; font-size: 16px; font-weight: bold; }
+table { border: 1px solid #c8c8c8; width: 100%; }
+table th { border: 1px solid #c8c8c8; background: #585858; color: #fff; width: 25%; padding: 15px; }
+table td { border: 1px solid #c8c8c8; padding: 10px; width: 25%; }
+table { border: none; border-top: 1px solid #c8c8c8; }
+table th { padding: 10px; border: none; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; }
+table th.subCell01 { padding: 10px; border: none; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; }
+table td { padding: 10px; border: none; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; }
+h1 { font-size: 32px; margin: 20px 0 40px; font-weight: bold; }
+h2 {
+    position: relative;
+    padding-left: 40px;
+    font-family: fot-tsukuaoldmin-pr6n, sans-serif;
+    font-size: 1.6rem;
+}
+h2::before {
+    content: "99";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h3 { font-size: 22px; margin-top: 35px; border-bottom: 2px solid #0054a2; padding-bottom: 8px; line-height: 1.5; font-weight: bold; }
+h4 { font-size: 20px; margin-top: 35px; border-left: 3px solid #0054a2; padding: 2px 0 2px 10px; line-height: 1.5; font-weight: bold; }
+h5 { font-size: 18px; margin-top: 25px; line-height: 1.5; font-weight: bold; }
+h6 { font-size: 16px; margin-top: 25px; line-height: 1.5; font-weight: bold; }
+h1:first-child, h2:first-child, h3:first-child, h4:first-child { margin-top: 0; }
+img { max-width: 100%; display: block; }
+
+@media screen and (max-width: 550px) {
+  iframe, p, ol, ul, table, dl { margin: 10px 0 0 0; font-size: 14px;}
+  hr { margin: 10px 0; }
+  blockquote p { padding: 5px 10px; margin-top: 10px; }
+  ul { margin-left: 1.2em; }
+  ul li { font-size: 14px; }
+  ul li::marker { color: #0054a2; font-size: 18px; }
+  ol { margin-left: 1.2em; }
+  ol li { font-size: 14px; }
+  ol li::marker { color: #0054a2; font-size: 14px; font-weight: bold; }
+  .tblWrapper table { width: 780px; }
+  table { border: none; border-top: 1px solid #c8c8c8; }
+  table th { display: block; width: 100%; padding: 10px; border: none; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; }
+  table th.subCell01 { width: 100%; padding: 10px; border: none; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; }
+  table td { display: block; width: 100%; padding: 10px; border: none; border-left: 1px solid #c8c8c8; border-right: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; }
+  h1 { font-size: 22px; margin: 0 0 30px 0; }
+  h2 { font-size: 22px; margin-top: 15px; border-left: 5px solid #0054a2; background: #ebf4fd; padding: 10px 15px 10px 15px; line-height: 1.5; font-weight: bold; }
+  h3 { font-size: 20px; margin-top: 20px; border-bottom: 2px solid #0054a2; padding-bottom: 8px; line-height: 1.5; font-weight: bold; }
+  h4 { font-size: 18px; margin-top: 20px; border-left: 3px solid #0054a2; padding: 2px 0 2px 10px; line-height: 1.5; font-weight: bold; }
+  h5 { font-size: 16px; margin-top: 25px; }
+  h6 { font-size: 1.4rem; margin-top: 20px; }
+}
