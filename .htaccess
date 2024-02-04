@@ -11,6 +11,9 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+# Redirect
+Redirect permanent /img/ https://mt-fuji-nmw.com/img/
+Redirect permanent /common/ http://localhost:3000/common/
 </IfModule>
 
 # END WordPress

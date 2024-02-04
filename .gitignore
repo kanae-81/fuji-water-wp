@@ -10,6 +10,8 @@
 /wp-content/languages
 /wp-content/plugins/index.php
 /wp-content/themes/index.php
+/wp-content/siteguard
+/wp-content/themes/j10_theme/sitemap.xml
 /wp-includes/
 # /index.php
 /license.txt
@@ -46,3 +48,5 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+.DS_Store
