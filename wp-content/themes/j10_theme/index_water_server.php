@@ -27,7 +27,7 @@ $related_cats_query = new WP_Query($args);
 ?>
 
   <?php if ($related_cats_query->have_posts()) : ?>
-   
+
     <ul>
       <?php while ($related_cats_query->have_posts()) : $related_cats_query->the_post(); ?>
       <?php $text_field = get_field('text_field'); ?>
@@ -56,13 +56,15 @@ if ( $categories ) {
       <?php endwhile; ?>
 </ul>
   <?php else : ?>
-    
+
   <?php
   endif;
   wp_reset_postdata(); ?>
       <p class="btnType02Wrap mt40"><a href="/column/" class="btnType06">一覧で見る</a></p>
-    </div>      
+    </div>
   </div>
+
+  <?php include("component/water_server_comparison_table.php"); ?>
 
   <?php the_field('omousikomi', false, false ); ?>
 
